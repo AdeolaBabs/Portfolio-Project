@@ -5,60 +5,65 @@
     --default-font-family: "Poppins", sans-serif;
 }
 
+ 
 body {
+    padding: 0; 
     margin: 0;
     background-color: #fff;
 }
 
-div {
-    display: block;
+.container{
+    max-width: 100%;
+    margin: 0;
 }
 
-div .hero{
-    height: 100%;
+nav {
+    background: transparent;
+    padding: 20px 80px;
 }
 
-nav{
-    background-color: transparent;
+.navbar-brand {
+    color: #000;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-/* div .navbarNav{
-   margin-left: 200px;
-} */
 
-
-#navbarNav {
-        justify-content: end;
-    }
-
-
-
-.navbar-brand{
-        color: #000;
-        font-family: Poppins;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    margin-left: 15px;
 }
 
-.nav-link:active{
+nav a {
+    text-decoration: none;
+    color: rgba(39, 33, 66, 0.70);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
     color: var(--branding-color);
 }
 
-.navbar-nav a{
-        color: #272142B2;
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        justify-content: right;
-}
-.hero {
+
+div .hero-container{
     background: var(--secondary-color);
+    max-width: 100%;
+}
+
+.hero {
     text-align: center;
-    padding: 200px 20px;
+    padding: 200px 80px;
 }
 
 .hero h2 {
@@ -66,7 +71,6 @@ nav{
     font-weight: 700;
     font-family: var(--default-font-family);
     text-align: center;
-    margin: 0;
     color: #272142;
 }
 
@@ -86,8 +90,7 @@ nav{
 
 .leaf{
     width: 236px;
-        height: 206px;
-        flex-shrink: 0;
+    height: 206px;
 }
 
 
@@ -106,14 +109,20 @@ h1{
     line-height: 27px;
     padding: 15px 30px;
     text-decoration: none;
+} 
+
+.btn-branding:hover{
+    background: transparent;
+    color: var(--branding-color);
+    border-color: var(--branding-color);
 }
 
-
+ 
 .work-inquiry{
     margin-top: 180px;
-    margin-left: 160px;
-    display: flex;
-    justify-content: center;
+    margin-left: 80px;
+    /* display: flex;
+    justify-content: center; */
     width: 1160px;
     height: 200px;
     border-radius: 20px;
@@ -141,16 +150,13 @@ h1{
     white-space: nowrap;
 }
 
-.inquiry-text {
-    margin-right: 230px;
-}
-
-.inquiry-text h1 {
-    margin-right: 200px;
+.inquiry-text h2 {
+    margin-left: 160px;
 }
 
 .work-inquiry a{
-    margin-top: 80px;
+    margin-left: 200px;
+    margin-top: 70px;
 }
 
 .about{
@@ -203,7 +209,7 @@ h1{
 
 .my-work{
     margin-top: 120px;
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 
@@ -246,11 +252,6 @@ h1{
         padding-left: 120px ;
         line-height: normal;
         text-underline-offset: 5px;
-}
-
-.work-content{
-    margin-top: 100px;
-    padding: 10px;
 }
 
 .work-content div{
@@ -390,46 +391,61 @@ h1{
     text-decoration: none;
 }
 
-.footer{
-    margin-top: 100px;
-}
+ footer {
+     margin: 60px 0;
+ }
 
-.footer h2{
-        color: #000;
-        text-align: center;
-        font-family: Poppins;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        text-decoration: none;
-}
+ footer h2 {
+     color: #000;
+     text-align: center;
+     font-family: var(--default-font-family);
+     font-size: 22px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     text-decoration: none;
+ }
 
-.footer a{
-    text-decoration: none;
-    color: #000;
-}
+ footer .email-link {
+     text-decoration: none;
+     color: black;
+     font-size: 24px;
+     margin-top: 20px;
+    font-family: var(--default-font-family);
+ }
 
-.footer div{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    margin-bottom: 5em;
-}
+ footer .email-link:hover {
+     color: var(--branding-color);
+ }
 
-.media-links{
-    display: flex;
-    margin-top: 30px;
-    margin-left: 40.5em;
-}
+ footer .social-links a {
+     margin: 0 20px;
+     color: var(--branding-color);
+     background: var(--secondary-color);
+     padding: 10px 14px;
+     border-radius: 50%;
+     font-size: 18px;
+     transition: all 100ms ease-in-out;
+ }
 
-.media-links div{
-   background: rgba(255, 206, 233, 0.14);
-   margin: 20px;
-}
-.footer img{
-    padding: 10px 8px;
-}
+ footer .social-links a:hover {
+     color: white;
+     background: var(--branding-color);
+ }
+
+ footer p{
+    font-family: var(--default-font-family);
+ }
+
+ footer p a{
+    color: var(--branding-color);
+ }
+
+
+
+ 
+
+ 
 
 @media (max-width: 900px) {
 
@@ -445,7 +461,8 @@ h1{
         .hero {
             background: var(--secondary-color);
             text-align: center;
-            padding: 80px 20px;
+            padding:80px 20px;
+            
         }
     
         .hero h2 {
@@ -485,14 +502,12 @@ h1{
         .leaf-container {
             display: flex;
             margin-top: 40px;
-            align-items: center;
-            justify-content: right;
         }
     
         .leaf {
             width: 146px;
             height: 120px;
-            margin-top: 90px;
+            margin-top: 90px; 
             flex-shrink: 0;
         }
 
@@ -500,66 +515,38 @@ h1{
         padding: 0;
         text-align: center;
     }
-
-      .about-section{
-        display: flex;
-        justify-content: center;
-        
-      }
-
+       
         .about-img {
             display: none;
         }
-                .aboutme {
-                    margin-top: -50px;
-                    text-align: center;
-                    /* padding: 80px 20px; */
-                    padding: 15px 35px;
-                }
-        
+                
                 .aboutme h1 {
                     color: #000;
                     font-family: var(--heading-font-family);
                     font-size: 44px;
-                    text-align: center;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
                 }
         
                 .aboutme p {
                     color: rgba(39, 33, 66, 0.70);
                     font-family: var(--default-font-family);
-                    font-size: 14px;
-                    font-style: normal;
-                    margin-left:  20px;
-                    font-weight: 400;
-                    line-height: px;
-                    margin-top: 15px;
-                     width: 280px;
-                    height: 80px; 
-        
+                    font-size: 16px;
+                    max-width: 100%;
                 }
         
                 .aboutme a {
                     color: #2A2D34;
                     font-family: var(--default-font-family);
                     font-size: 15px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 250px;
-                    text-underline-offset: 5px;
-                }
+                } 
 
-                        .my-work {
-                            margin-top: 40px;
-                            margin-left: 20px;
+                        /* .my-work {
+                            display: flex;
+                            justify-content: center;
                         }
 
                         .my-work div{
                             margin-top: 20px;
-
-                        }
+                        } */
 
                                 .card {
                                     width: 300px;
@@ -697,4 +684,5 @@ h1{
                                     display: none;
                                 }
 
-}
+}  
+

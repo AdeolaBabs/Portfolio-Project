@@ -21,121 +21,147 @@
         
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/" title="Homepage">Adeola</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/" tilte="Homepage">Home</a>
+    <div class="container">
+            <nav class="d-flex justify-content-between navbar-light fixed-top">
+                <a class="navbar-brand" href="/" title="Homepage">Adeola</a>
+                <ul>
+                    <li class="active">
+                        <a href="/" title="Homepage"> Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html#about-section" title="About Adeola">About me</a>
+                    <li>
+                        <a href="/#about-section" title="About Adeola">About me</a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/mywork.html" title="My Work">My work</a>
+                    <li>
+                        <a href="/mywork.html" title="Adeola's work"> My Work</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.html" title="Contact Adeola">Contact me</a>
+                    <li>
+                        <a href="/contact.html" title="Contact Adeola"> Contact me</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="hero">
-        <h2>Hi I'm</h2>
-        <h1>Adeola Babatunde</h1>
-        <p>A UI/UX Designer, based in Nigeria</p>
-        <div>
-            <a href="#" class="btn btn-branding">Contact me</a>
-        </div>
-       <div class="leaf-container">
-        <img class="leaf" src="Images/Frame.svg" alt="a leaf for aesthetics">
-       </div>
-    </div>
+            </nav>
 
-    <div id="about-section" class="hero-content mt-5">
-        <div class="row">
-            <div class="about col">
-                <img class="about-img" src="Images/aboutme-laptop.png" alt="graphic design software on laptop">
+            <div class="hero-container">
+                <div class="hero">
+                    <h2>Hi I'm</h2>
+                    <h1>Adeola Babatunde</h1>
+                    <p>A UI/UX Designer, based in Nigeria</p>
+                    <div>
+                        <a href="#" class="btn btn-branding">Contact me</a>
+                    </div>
+                    <div class="leaf-container">
+                        <img class="leaf" src="Images/Frame.svg" alt="a leaf for aesthetics">
+                    </div>
+                </div>
             </div>
             
-            <div class="aboutme col">
-                <h1>About Me </h1>
-                <p class="mb-6" >Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                    texts.
-                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river
-                    named
-                    Duden flows by</p>
-                <a href="contact.html">Contact me</a>
+            <div id="about-section" class="about-container mt-5">
+                <div class="row">
+                    <div class="about col">
+                        <img class="about-img d-none d-lg-block" src="Images/aboutme-laptop.png"
+                            alt="graphic design software on laptop">
+                    </div>
             
+                    <div class="aboutme col">
+                        <h1>About Me </h1>
+                        <p class="mb-6">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind
+                            texts.
+                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A
+                            small river
+                            named
+                            Duden flows by</p>
+                        <a href="contact.html">Contact me</a>
+            
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-
-<div class="my-work row row-cols-1 row-cols-md-3 ">
-    <div class="col">
-        <div class="card">
-            <img src="Images/work1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Nigerian Railway App</h5>
-                <p class="card-text">Far far away, behind the word mountains,far from the countries Vokalia</p>
-                <a href="#">Check it out</a>
+            
+            <div class="my-work row row-cols-1 row-cols-md-3 ">
+                <div class="col d-flex justify-content-center mt-5">
+                    <div class="card">
+                        <img src="Images/work1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nigerian Railway App</h5>
+                            <p class="card-text">Far far away, behind the word mountains,far from the countries Vokalia</p>
+                            <a href="#">Check it out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mt-5">
+                    <div class="card">
+                        <img src="Images/work2.png" class="card-img-top2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sign Up page of a local Doughnut shop.</h5>
+                            <p class="card-text">Far far away, behind the word mountains,far from the countries Vokalia</p>
+                            <a href="#">Check it out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mt-5">
+                    <div class="card">
+                        <img src="Images/work3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Divani Jewelry Landing Page</h5>
+                            <p class="card-text">Far far away, behind the word mountains,far from the countries Vokalia</p>
+                            <a href="#">Check it out</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img src="Images/work2.png" class="card-img-top2" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Sign Up page of a local Doughnut shop.</h5>
-                <p class="card-text">Far far away, behind the word mountains,far from the countries Vokalia</p>
-                <a href="#">Check it out</a>
+          <footer>
+            <div class="work-inquiry justify-content-between mb-5 d-none d-md-flex">
+                <div class="row">
+                    <div class="inquiry-text col mt-5">
+                        <h1>Work Inquiry</h1>
+                        <h2>Let’s work together and i’ll help you by all my best</h2>
+                    </div>
+                    <div class="col">
+                        <a href="contact.html" class="btn btn-branding">Let's talk here</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img src="Images/work3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Divani Jewelry Landing Page</h5>
-                <p class="card-text">Far far away, behind the word mountains,far from the countries Vokalia</p>
-                <a href="#">Check it out</a>
+            
+            
+            <div class="d-flex justify-content-center mb-5">
+                <a href="mailto:chiomababatunde@gmail.com" class="email-link" title="Email Adeola">
+                    chiomababatunde@gmail.com
+                </a>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="work-inquiry">
-     <div class="row">
-        <div class="inquiry-text col mt-5">
-             <h1>Work Inquiry</h1>
-             <h2>Let’s work together and i’ll help you by all my best</h2>
-        </div>
-        <div class="col">
-        <a href="contact.html" class="btn btn-branding">Let's talk here</a>
-        </div>
-     </div>
-</div>
+            <div class="social-links d-flex justify-content-center">
+                <a href="https://www.github.com/AdeolaBabs" target="_blank" title="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instragram.com/patricia" target="_blank" title="instragram Profile">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com/patricia" target="_blank" title="Twitter Profile">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="text-center mt-5">
+                ✌️ This website was coded by Adeola Babatunde, and is
+                <a href="https://github.com/AdeolaBabs/Portfolio-Project" target="_blank">
+                    open-sourced
+                </a>
+            </p>
+      </div>  
+    </footer>
+            <!-- <div class="footer">
+                <h2> <a href="chiomababatunde@gmail.com" class="email-link"> chiomababatunde@gmail.com </a> </h2>     
+                <div class="media-links">
+                    <div>
+                        <img src="Images/DribbbleLogo.svg" alt="Dribbble Logo">
+                    </div>
+                    <div>
+                        <img src="Images/twitter.svg" alt="Twitter Logo">
+                    </div>
+                    <div>
+                        <img src="Images/InstagramLogo.svg" alt="Instagram Logo">
+                    </div>
+                </div>
+            </div> -->
+        
     
-<div class="footer">
-    <h2> <a href="chiomababatunde@gmail.com" class="email-link"> chiomababatunde@gmail.com </a> </h2>     
-    <div class="media-links">
-        <div>
-            <img src="Images/DribbbleLogo.svg" alt="Dribbble Logo">
-        </div>
-        <div>
-            <img src="Images/twitter.svg" alt="Twitter Logo">
-        </div>
-        <div>
-            <img src="Images/InstagramLogo.svg" alt="Instagram Logo">
-        </div>
-    </div>
-</div>
+    
 </body>
 </html>
